@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  compiler:
+    image: bellsoft/liberica-openjdk-alpine:11
+    volumes:
+      - ./src:/app/src
+      - ./out:/app/out
+    command: javac -sourcepath /app/src -d /app/out /app/src/ru/gb/jcore/sample/Main.java
+
+  runner:
+    image: bellsoft/liberica-openjdk-alpine:11
+    depends_on:
+      - compiler
+    volumes:
+      - ./out:/app/out
+    command: java -cp /app/out ru.gb.jcore.sample.Main

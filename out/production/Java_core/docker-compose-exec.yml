@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  app:
+    image: bellsoft/liberica-openjdk-alpine:11
+    working_dir: /app
+    volumes:
+      - ./out:/app/out  # Подключаем директорию с .class-файлами
+    command: java -cp /app/out ru.gb.jcore.sample.Main
+
+    restart: on-failure  # Автоперезапуск при ошибках

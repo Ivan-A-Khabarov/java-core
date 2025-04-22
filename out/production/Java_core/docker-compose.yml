@@ -6,7 +6,7 @@ services:
     volumes:
       - ./src:/app/src
       - ./out:/app/out
-    command: javac -sourcepath /app/src -d /app/out /app/src/ru/gb/jcore/sample/Main.java
+    command: javac -sourcepath /app/src -d /app/out /app/src/ru/gb/jcore/sample/Exceptional.java
 
   runner:
     image: bellsoft/liberica-openjdk-alpine:11

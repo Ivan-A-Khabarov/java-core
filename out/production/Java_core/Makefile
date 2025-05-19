@@ -7,7 +7,7 @@ DOC_DIR := docs
 JC := javac
 JDOC := javadoc
 JFLAGS := -sourcepath $(SRC_DIR) -d $(OUT_DIR) -cp $(OUT_DIR)
-MAIN_CLASS := ru.gb.jcore.sample.Main
+MAIN_CLASS := ru.gb.jcore.sample.Core_5.Main
 MAIN_SOURCE := $(subst .,/,$(MAIN_CLASS))
 
 .PHONY: all clean run docs

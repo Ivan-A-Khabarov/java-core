@@ -6,6 +6,6 @@ services:
     working_dir: /app
     volumes:
       - ./out:/app/out  # Подключаем директорию с .class-файлами
-    command: java -cp /app/out ru.gb.jcore.sample.Main
+    command: java -cp /app/out ru.gb.jcore.sample.Core_5.Main
 
     restart: on-failure  # Автоперезапуск при ошибках

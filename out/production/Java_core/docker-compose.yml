@@ -14,4 +14,4 @@ services:
       - compiler
     volumes:
       - ./out:/app/out
-    command: java -cp /app/out ru.gb.jcore.sample.Main
+    command: java -cp /app/out ru.gb.jcore.sample.Core_5.Main

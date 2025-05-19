@@ -1,0 +1,69 @@
+# Файлы, сгенерированные сборщиками (Maven, Gradle)
+target/
+build/
+out/
+bin/
+*.jar
+*.war
+*.ear
+*.nar
+
+# Логи и временные файлы
+*.log
+*.tmp
+*.swp
+*.swo
+
+# Файлы IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+.classpath
+.project
+.settings/
+.vscode/
+*.launch
+
+# Файлы операционной системы
+.DS_Store
+Thumbs.db
+
+# Файлы, сгенерированные во время выполнения
+*.class
+hs_err_pid*
+
+# Файлы зависимостей (если не используете Maven/Gradle)
+lib/
+libs/
+
+# Файлы тестов и отчетов
+test-output/
+test-results/
+*.jfr
+*.hprof
+
+# Файлы конфигурации (если не нужно коммитить)
+*.properties
+*.yml
+*.yaml
+*.xml
+
+# Файлы, специфичные для Java
+*.orig
+*.rej
+
+# Файлы, сгенерированные документацией
+javadoc/
+
+# Файлы, сгенерированные профилировщиками
+*.hprof
+
+# Файлы, специфичные для Gradle
+.gradle/
+gradle-app.setting
+
+# Файлы, специфичные для Maven
+dependency-reduced-pom.xml
+maven-*.xml
+pom.xml.versionsBackup
